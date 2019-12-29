@@ -11,17 +11,17 @@ Since the Raspberry Pi it has been really easy to run code 24/7 for a few euro's
 I have a fairly standardised scheduled daily routine and planned the script to run twice before I walk out the door.. actually, the same script runs twice. One run at 6:45 AM and one at 07:05 AM.. that should flag trouble in time for my particular situation. Only running those at weekdays is easy when you Google a bit on crontab formats. For the journey from B --> A in the afternoon I also scheduled crontab. because of the change of direction I use a copy of the script for this particular direction. One could build it into one.. but let's not over complicate stuff.
 
 # Example of the Crontab:
-#m h  dom mon dow   command
-45 06 * *     1-5 python /home/pi/nswatch/nswatch_v1.0_Amsterdam.py >/dev/null 2>&1
-05 07 * *     1-5 python /home/pi/nswatch/nswatch_v1.0_Amsterdam.py >/dev/null 2>&1
-50 17 * *     1-5 python /home/pi/nswatch/nswatch_v1.0_Utrecht.py >/dev/null 2>&1
-05 18 * *     1-5 python /home/pi/nswatch/nswatch_v1.0_Utrecht.py >/dev/null 2>&1
+>#m h  dom mon dow   command
+>45 06 * *     1-5 python /home/pi/nswatch/nswatch_v1.0_Amsterdam.py >/dev/null 2>&1
+>05 07 * *     1-5 python /home/pi/nswatch/nswatch_v1.0_Amsterdam.py >/dev/null 2>&1
+>50 17 * *     1-5 python /home/pi/nswatch/nswatch_v1.0_Utrecht.py >/dev/null 2>&1
+>05 18 * *     1-5 python /home/pi/nswatch/nswatch_v1.0_Utrecht.py >/dev/null 2>&1
 
 # Kudos
-To the people at NS who opened up this nice API and Web GUI. 
+To the people at NS who opened up this nice API and Web GUI.:+1:
 It really inspired me to query the API and learn about JSON, Python and the whole !#
-To the people at Telegram who made it possible to use their messaging platform
-To the community working on/ with Domoticz who documented the creation of credentials & Bot on Telegram
+To the people at Telegram :+1: who made it possible to use their messaging platform
+To the community working on/ with Domoticz :+1: who documented the creation of credentials & Bot on Telegram
 
 # Links
 NS API Documentation: https://apiportal.ns.nl/
