@@ -1,5 +1,5 @@
 # NSwatch - prelude
-Use the NS API to look for changes in your daily train routine. Especially the cancelled trains which are not (yet?) picked up by the regular NS App. The python code will run, scheduled by crontab, monitor your regular trains and send you a Telegram message before you commute to a train station to find your train has been cancelled or delayed. It will run on anything that tolerates python.
+This python code uses the NS API to look for changes in your daily train routine. Especially the cancelled trains which are not (yet?) picked up by the regular NS App. The python code will run, scheduled by crontab, monitor your regular trains and send you a Telegram message before you commute to a train station to find your train has been cancelled or delayed. It will run on anything that tolerates python.
 
 # Why?
 I like train travels for my daily commute. I do not like the surprise when I walk into the station and see a lot of people waiting due to a cancelled train. Although the NS App has a good alerting function, I could not help noticing that it is lacking the ability to notify in case of cancelled trains. I hear you thinking.. where do all the people go when a train is cancelled? To the same coffee shop.. I rather work from home or desk when this happens and decided to write a bit of code that queries the official NS API.
